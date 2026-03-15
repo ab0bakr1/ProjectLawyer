@@ -1,0 +1,99 @@
+{
+  "HomePage": {
+    "Navbar": {
+      "Home": "Home",
+      "About": "About",
+      "pricing": "Pricing",
+      "contact": "Contact Us",
+      "FAQS": "FAQS",
+      "CTA": "Get Started"
+    },
+    "boxes": {
+      "box1": {
+        "title": "Create Your Survey",
+        "text": "Choose a template or start from scratch using our easy-to-use builder"
+      },
+      "box2": {
+        "title": "Share With Your Audience",
+        "text": "Send your survey via email, social media, or embed it in your website"
+      },
+      "box3": {
+        "title": "Analyze Responses",
+        "text": "Get instant insights with clean charts and downloadable reports"
+      }
+    },
+    "Hero": {
+      "title": "Welcome to Our Website",
+      "text": "Discover amazing content and join our community!",
+      "buttonText": "Get Started"
+    },
+    "customers": {
+      "title": "Our Customers",
+      "TitleSpan": "The Best"
+    },
+    "Form": {
+      "FormNowTitle": "Write your question > Select your specialization > Talk to a lawyer",
+      "Title":"We are waiting for you",
+      "Email": "Email",
+      "EmailPlaceholder": "Enter your email",
+      "YourName": "Name",
+      "YourNamePlaceholder": "Enter your name",
+      "YourSpecialization": "What is your specialization?",
+      "YourMessage": "Your Consultation",
+      "YourMessagePlaceholder": "Enter your consultation",
+      "selectOption": "Select your specialization",
+      "civil": "Civil",
+      "criminal": "Criminal",
+      "commercial": "Commercial",
+      "submit": "Get Consultation"
+    },
+    "Numbers": {
+      "Number1": {
+        "title": "Business achievements for our clients"
+      },
+      "Number2": {
+        "title": "Contracts for commercial companies prepared and reviewed"
+      },
+      "Number3": {
+        "title": "Company formation and incorporation"
+      },
+      "Number4": {
+        "title": "Legal consultations"
+      }
+    },
+    "fields": {
+      "field1": {
+        "title": "Legal Consultation Services",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field2": {
+        "title": "Power of Attorney & Legal Representation",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field3": {
+        "title": "Legal Contract Services",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field4": {
+        "title": "Arbitration & Dispute Resolution",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field5": {
+        "title": "Debt Collection & Judgment Enforcement",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field6": {
+        "title": "Legal Department Rehabilitation",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field7": {
+        "title": "Legal Governance",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      },
+      "field8": {
+        "title": "Labor Law Cases & Employment Relations",
+        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+      }
+    }
+  }
+}
