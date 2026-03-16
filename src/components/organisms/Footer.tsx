@@ -35,8 +35,8 @@ export default function Footer() {
             <ul className="space-y-4 ds-text-sm">
               <li><a href="/" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.Home")}</a></li>
               <li><a href="/about" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.About")}</a></li>
-              <li><a href="/pricing" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.pricing")}</a></li>
-              <li><a href="/contact" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.contact")}</a></li>
+              <li><a href="/pricing" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.Advantages")}</a></li>
+              <li><a href="/contact" className="ds-hover opacity-80 hover:opacity-100">{t("HomePage.Navbar.Contact")}</a></li>
             </ul>
           </div>
 

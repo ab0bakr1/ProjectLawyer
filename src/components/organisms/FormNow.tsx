@@ -12,7 +12,7 @@ export default function FormNow() {
             {t("HomePage.Form.FormNowTitle")}
         </Title>
         <div className="ds-container grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 ds-bg-primary p-6 rounded-lg shadow-md">
-            <Images src={FormIMG} alt="FormNow" className="w-full h-full rounded-lg shadow-md" />
+            <Images src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=1470" alt="FormNow" width={800} height={800} className="w-full h-full rounded-lg shadow-md" />
             <Form />
         </div>
     </div>

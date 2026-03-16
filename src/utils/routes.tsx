@@ -2,6 +2,6 @@
 export const Routes = [
   { id: 1, key: "Home", path: "/" },
   { id: 2, key: "About", path: "/about" },
-  { id: 3, key: "pricing", path: "/pricing" },
+  { id: 3, key: "Advantages", path: "/Advantages" },
   { id: 4, key: "FAQS", path: "/FAQS" },
 ];

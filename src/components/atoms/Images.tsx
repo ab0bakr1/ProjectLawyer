@@ -28,11 +28,10 @@ export default function Images({
         src={src}
         alt={alt}
         quality={100}
-        width={width}
-        height={height}
         priority={priority}
         sizes={sizes}
         fill={fill}
+        {...(!fill && { width, height })}
         className={cn(className)}
       />
     </div>

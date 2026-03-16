@@ -7,7 +7,7 @@ export default function Form() {
     const t = useTranslations();
   return (
     <form className="p-6 rounded-lg">
-        <h2 className="text-2xl font-bold mb-4">{t("HomePage.Form.Title")}</h2>
+        <h2 className="text-2xl font-bold mb-4">{t("HomePage.Form.title")}</h2>
         <div className="mb-4">
             <label htmlFor="name" className="block text-sm font-medium mb-1">
                 {t("HomePage.Form.YourName")}

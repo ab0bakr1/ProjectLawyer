@@ -11,10 +11,10 @@ export default function Fields() {
   return (
     <section className= 'ds-container py-12'>
         <Title center={true} size="xl">
-            Lorem ipsum dolor sit amet.
+            {t("HomePage.fields.title")}
         </Title>
         <Text center={true} variant="disabled">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quod error soluta!
+            {t("HomePage.fields.text")}
         </Text>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-5">
             {DataFields.map((field)=>(

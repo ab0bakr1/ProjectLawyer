@@ -3,10 +3,10 @@
     "Navbar": {
       "Home": "Home",
       "About": "About",
-      "pricing": "Pricing",
-      "contact": "Contact Us",
+      "Advantages": "Advantages",
+      "Contact": "Contact Us",
       "FAQS": "FAQS",
-      "CTA": "Get Started"
+      "CTA": "Consultation Now"
     },
     "boxes": {
       "box1": {
@@ -23,17 +23,17 @@
       }
     },
     "Hero": {
-      "title": "Welcome to Our Website",
-      "text": "Discover amazing content and join our community!",
-      "buttonText": "Get Started"
+      "title": "Smart Legal Solutions at Your Fingertips.",
+      "text": "Get instant legal advice from elite consultants with total privacy and extreme ease.",
+      "buttonText": "Start Your Consultation Now"
     },
     "customers": {
       "title": "Our Customers",
       "TitleSpan": "The Best"
     },
     "Form": {
-      "FormNowTitle": "Write your question > Select your specialization > Talk to a lawyer",
-      "Title":"We are waiting for you",
+      "FormNowTitle": "Ask your question > Choose specialty > Talk to your lawyer",
+      "title":"We are waiting for you",
       "Email": "Email",
       "EmailPlaceholder": "Enter your email",
       "YourName": "Name",
@@ -62,17 +62,19 @@
       }
     },
     "fields": {
+      "title": "Our Integrated Legal Services",
+      "text": "Providing innovative legal solutions covering all your professional and personal needs.",
       "field1": {
-        "title": "Legal Consultation Services",
-        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+        "title": "Corporate & Startup Law",
+        "text": "Company formation, contract drafting, and IP protection."
       },
       "field2": {
-        "title": "Power of Attorney & Legal Representation",
-        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+        "title": "Real Estate & Construction",
+        "text": "Legal representation in real estate disputes and documentation."
       },
       "field3": {
-        "title": "Legal Contract Services",
-        "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
+        "title": "Labor & Employment Law",
+        "text": "Regulating employer-employee relations and ensuring rights."
       },
       "field4": {
         "title": "Arbitration & Dispute Resolution",
@@ -94,6 +96,19 @@
         "title": "Labor Law Cases & Employment Relations",
         "text": "We provide comprehensive legal, Sharia, and administrative consultations, whether written or oral."
       }
+    },
+    "FAQs": {
+      "FAQ1":{
+        "Q": "Is the consultation confidential?",
+        "A": "Yes, all your data and consultations are protected by the highest encryption standards."
+      }
+    },
+    "ContactUs": {
+      "title": "Contact Us Today",
+      "text": "We are here to answer your questions and schedule a detailed consultation.",
+      "Mobile": "Mobile:+966500000000",
+      "Email": "Email:info@legal-smart.com",
+      "MAP": "Al Faisaliah Tower, 12th Floor, Riyadh, Saudi Arabia."
     }
   }
 }

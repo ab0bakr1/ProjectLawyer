@@ -14,8 +14,7 @@ interface DesktopNavLinksProps {
   closeNavbar: () => void;
 }
 export default function DesktopNavLinks({ mainRoutes }: DesktopNavLinksProps) {
-  const t = useTranslations("HomePage.Navbar");
-
+    const t = useTranslations("HomePage.Navbar");
   return (
     <ul className="text-light hidden items-center gap-6 text-base ds-text-lg md:flex">
       {mainRoutes.map((item) => (
