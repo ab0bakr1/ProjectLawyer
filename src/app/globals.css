@@ -50,8 +50,8 @@
   .ds-bg-primary-900 {
     background-color: var(--color-primary-900);
   }
-  .ds-bg-primary {
-    background-color: var(--color-primary);
+  .ds-bg-secondary {
+    background-color: var(--color-secondary);
   }
   .ds-bg {
     background-color: var(--color-bg);
@@ -74,6 +74,9 @@
   }
   .ds-text-disabled {
     color: var(--color-text-disabled);
+  }
+  .ds-text-secondary-alt {
+    color: var(--color-secondary);
   }
   /* ================= BORDERS ================= */
   .ds-border-sm {
