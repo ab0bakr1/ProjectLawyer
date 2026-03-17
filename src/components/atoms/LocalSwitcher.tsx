@@ -1,4 +1,3 @@
-// app/components/LocaleSwitcher.tsx
 "use client";
 import { useEffect } from "react";
 import { Locale, useLocale } from "next-intl";
@@ -10,6 +9,7 @@ type Props = {
 
 export default function LocaleSwitcher({ changeLocaleAction }: Props) {
   const locale = useLocale();
+
   useEffect(() => {
     const dir = locale === "ar" ? "rtl" : "ltr";
     document.documentElement.setAttribute("dir", dir);
@@ -17,31 +17,44 @@ export default function LocaleSwitcher({ changeLocaleAction }: Props) {
   }, [locale]);
 
   const nextLocale = locale === "en" ? "ar" : "en";
-  const baseClasses = `
-    fixed
-    bottom-4
-    right-4
-    w-14
-    h-14
-    rounded-full
-    ds-bg-primary
-    text-white
-    flex
-    items-center
-    justify-center
-    text-md
-    shadow-xl
-    hover:scale-105
-    transition
-    cursor-pointer
-    z-50
-  `;
+
   return (
     <button
       onClick={() => changeLocaleAction(nextLocale)}
-      className={cn(baseClasses)}
+      className={cn(`
+        fixed
+        bottom-6
+        /* حل ملاحظة العميل: استخدام end بدلاً من right ليتغير مكانه تلقائياً */
+        inset-split-end-6 
+        ltr:right-6 rtl:left-6
+        
+        /* التصميم: جعل الزر أكثر فخامة ووضوحاً */
+        w-14 h-14
+        rounded-full
+        ds-bg-primary
+        border-2 border-[#D4AF37]/30
+        text-[#D4AF37]
+        ds-font-bold
+        flex flex-col items-center justify-center
+        shadow-[0_10px_30px_rgba(26,43,72,0.4)]
+        hover:scale-110 hover:ds-bg-secondary hover:text-[#D4AF37]
+        active:scale-95
+        transition-all duration-300
+        z-[999]
+        group
+      `)}
+      aria-label="Change Language"
     >
-      {locale === "en" ? "AR" : "EN"}
+      {/* أيقونة بسيطة مع النص لزيادة الوضوح */}
+      <span className="text-[10px] opacity-70 group-hover:text-[#D4AF37]">
+        {locale === "en" ? "العربية" : "English"}
+      </span>
+      <span className="text-sm font-extrabold uppercase tracking-tighter">
+        {locale === "en" ? "AR" : "EN"}
+      </span>
+      
+      {/* تأثير نبض (Pulse) لجذب الانتباه في أول زيارة */}
+      <span className="absolute inset-0 rounded-full bg-[#D4AF37]/20 animate-ping -z-10 group-hover:hidden" />
     </button>
   );
 }

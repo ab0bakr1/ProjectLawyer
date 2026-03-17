@@ -33,16 +33,18 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center p-6">
+    /* تم استبدال left-0 right-0 بـ inset-x-0 ليدعم RTL تلقائياً */
+    <header className="fixed top-0 inset-x-0 z-50 flex justify-center p-6 transition-all duration-500">
       <nav
         className={cn(
             "flex items-center justify-between px-6 py-3 transition-all duration-700 ease-in-out",
-            "w-full max-w-6xl rounded-full border border-white/20 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]",
-            "bg-white/10 backdrop-blur-lg", // تأثير الزجاج
-            isScrolled ? "scale-95 bg-black/20" : "scale-100"
+            "w-full max-w-6xl rounded-full border border-white/20 shadow-lg",
+            "bg-black/30 backdrop-blur-xl", 
+            isScrolled ? "scale-95 ds-bg-primary-900/40" : "scale-100"
           )}
       >
-        <div className="mx-auto flex items-center justify-between py-2 sm:px-10 md:px-0 md:py-4 ds-container">
+        {/* ds-container تضمن محاذاة اللوجو والروابط حسب اللغة */}
+        <div className="mx-auto flex items-center justify-between py-2 w-full ds-container">
           <NavLogo />
 
           <DesktopNavLinks
@@ -51,34 +53,42 @@ export default function Navbar() {
             dropdownOpen={dropdownOpen}
             toggleDropdown={() => setDropdownOpen((p) => !p)}
             closeNavbar={closeNavbar}
-
           />
 
-          <div className="hidden md:block ">
-            <Button size="md">{t("HomePage.Navbar.CTA")}</Button>
+          <div className="hidden md:block">
+            {/* استخدام اللون الذهبي من السيستم ديزاين للزر لجذب الانتباه */}
+            <Button className="ds-bg-secondary text-[#1A2B48] ds-font-bold px-6 py-2 ds-rounded-full hover:scale-105 transition-transform">
+              {t("HomePage.Navbar.CTA")}
+            </Button>
           </div>
-          <div className="md:hidden">
+
+          <div className="md:hidden flex items-center">
             <NavIconButton onClick={() => setOpen(true)}>
-              <ListMinus size={30} />
+              {/* تغيير لون الأيقونة لتكون أوضح في الجوال */}
+              <ListMinus size={30} className="text-[#D4AF37]" />
             </NavIconButton>
           </div>
         </div>
 
-        {/* Mobile */}
+        {/* Mobile Menu Overlay */}
         <div
           className={cn(
-            "ds-bg fixed top-0 right-0 z-40 h-screen w-full transition-transform duration-300 md:hidden",
-            open ? "translate-x-0" : "translate-x-full",
+            /* استخدام inset-y-0 و inset-inline-0 لضمان خروج القائمة من الجهة الصحيحة */
+            "ds-bg-primary fixed inset-y-0 inset-inline-0 z-[100] h-screen w-full transition-transform duration-500 md:hidden",
+            /* translate-x-full في RTL تعني الخروج لليسار وفي LTR تعني الخروج لليمين */
+            open ? "translate-x-0" : "ltr:translate-x-full rtl:-translate-x-full",
           )}
         >
           <MobileNavHeader onClose={closeNavbar} />
-          <MobileNavLinks
-            mainRoutes={mainRoutes}
-            dropdownRoutes={dropdownRoutes}
-            dropdownOpen={dropdownOpen}
-            toggleDropdown={() => setDropdownOpen((p) => !p)}
-            closeNavbar={closeNavbar}
-          />
+          <div className="mt-8">
+            <MobileNavLinks
+              mainRoutes={mainRoutes}
+              dropdownRoutes={dropdownRoutes}
+              dropdownOpen={dropdownOpen}
+              toggleDropdown={() => setDropdownOpen((p) => !p)}
+              closeNavbar={closeNavbar}
+            />
+          </div>
         </div>
       </nav>
     </header>
