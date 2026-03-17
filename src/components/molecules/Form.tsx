@@ -10,7 +10,7 @@ export default function Form() {
     return (
         <form className="p-2 sm:p-6 flex flex-col gap-5">
             {/* 1. حل مشكلة النصوص السوداء: تحويلها للأبيض/الفاتح */}
-            <Title className="ds-font-bold text-white mb-2" size={"xl"} variant={""}>
+            <Title className="ds-font-bold text-white mb-2" size={"xl"}>
                 {t("HomePage.Form.title")}
             </Title>
             
