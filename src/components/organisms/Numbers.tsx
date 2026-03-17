@@ -1,6 +1,6 @@
 import React from 'react'
 import NumberCom from '../molecules/NumberCom'
-import { Number as NumberData } from '../../utils/data'
+import { NumberData } from '../../utils/data'
 
 export default function Numbers() {
     return (
@@ -8,7 +8,7 @@ export default function Numbers() {
         <section className="py-20 ds-bg-alt/30 border-y border-gray-100">
             <div className="ds-container">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0">
-                    {NumberData.map((num, index) => (
+                    {NumberData.map((num) => (
                         <div 
                             key={num.id} 
                             /* حل مشكلة الـ RTL: 

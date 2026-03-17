@@ -15,7 +15,7 @@ export const dataBox = [
     text: "HomePage.boxes.box3.text",
   },
 ];
-export const Number =[
+export const NumberData =[
 {
   id: 1,
   title: "HomePage.Numbers.Number1.title",
