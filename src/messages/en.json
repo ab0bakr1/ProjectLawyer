@@ -108,7 +108,10 @@
       "text": "We are here to answer your questions and schedule a detailed consultation.",
       "Mobile": "Mobile:+966500000000",
       "Email": "Email:info@legal-smart.com",
-      "MAP": "Al Faisaliah Tower, 12th Floor, Riyadh, Saudi Arabia."
+      "MAP": "Al Faisaliah Tower, 12th Floor, Riyadh, Saudi Arabia.",
+      "EmailLabel": "Email",
+      "MobileLabel": "Mobile",
+      "AddressLabel": "Location"
     }
   }
 }
