@@ -112,6 +112,15 @@
       "EmailLabel": "Email",
       "MobileLabel": "Mobile",
       "AddressLabel": "Location"
+    },
+    "ThankYou": {
+      "title": "Thank You for Contacting Us",
+      "text": "Your request has been received successfully. Our legal team will get in touch with you as soon as possible.",
+      "nextSteps": "What happens next?",
+      "step1": "Our team will review your request details within 24 hours.",
+      "step2": "A specialized attorney will contact you via email or phone.",
+      "step3": "We will schedule a convenient time for your initial consultation.",
+      "backHome": "Back to Home"
     }
   }
 }

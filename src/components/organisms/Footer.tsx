@@ -2,6 +2,8 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "../../../public/assets/icons/icons";
+import Images from "../atoms/Images";
+import { Logo } from "../../../public/assets/images/images";
 
 export default function Footer() {
   const t = useTranslations();
@@ -18,6 +20,7 @@ export default function Footer() {
             <h3 className="text-2xl ds-font-heading ds-font-bold text-[#D4AF37] tracking-tight">
               {t("HomePage.Navbar.Home")} 
             </h3>
+            <Images src={Logo} alt="Logo" width={80} />
             <p className="ds-text-sm text-white/70 leading-relaxed max-w-xs">
               مكتب محاماة رائد يسعى لتقديم أجود الخدمات القانونية والشرعية 
               بأعلى معايير المهنية والنزاهة لحماية حقوق عملائنا.
