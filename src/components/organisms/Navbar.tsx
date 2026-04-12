@@ -74,7 +74,7 @@ export default function Navbar() {
         <div
           className={cn(
             /* استخدام inset-y-0 و inset-inline-0 لضمان خروج القائمة من الجهة الصحيحة */
-            "ds-bg-primary fixed inset-y-0 inset-inline-0 z-[100] h-screen w-full transition-transform duration-500 md:hidden",
+            "ds-bg-primary fixed inset-y-0 inset-x-10 inset-inline-100 z-[100] h-screen w-full transition-transform duration-500 md:hidden",
             /* translate-x-full في RTL تعني الخروج لليسار وفي LTR تعني الخروج لليمين */
             open ? "translate-x-0" : "ltr:translate-x-full rtl:-translate-x-full",
           )}
